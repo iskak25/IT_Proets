@@ -1,0 +1,44 @@
+.container {
+  margin: 0 auto;
+  width: 1240px;
+  .content {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .login {
+      background-color: #f64c72;
+      width: 80px;
+      height: 35px;
+      border-radius: 6px;
+      border: none;
+      color: #fff;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .h3 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-decoration: none;
+      color: #fff;
+    }
+    p {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
