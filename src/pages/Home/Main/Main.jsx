@@ -18,12 +18,16 @@ const Main = () => {
               </p>
             </div>
             <div className={mainStyle.btns}>
-              <button className={mainStyle.btns_blue}>
-                Получить консультанию
-              </button>
-              <button className={mainStyle.btns_white}>
-                Тест на профориентацию
-              </button>
+              <a href="https://wa.me/996708207734">
+                <button className={mainStyle.btns_blue}>
+                  Получить консультанию
+                </button>
+              </a>
+              <a href="https://wa.me/996708207734">
+                <button className={mainStyle.btns_white}>
+                  Запис на профориентацию
+                </button>
+              </a>
             </div>
           </div>
         </div>

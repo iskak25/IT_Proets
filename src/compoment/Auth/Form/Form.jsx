@@ -1,4 +1,4 @@
-import Text from 'compoment/Text/Text'
+import Text from 'compoment/Auth/Texts/Text'
 import React, { useState } from 'react'
 import formStyle from './Form.module.scss'
 
@@ -13,19 +13,19 @@ const Form = ({ title, handleClick, p, link, a, name }) => {
           <div className={formStyle.first_item}>
             <input
               className={formStyle.input_big}
-              type="password"
-              value={pass}
-              onChange={(e) => setPass(e.target.value)}
-              placeholder="Password"
+              type="text"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="email"
             />
           </div>
           <div className={formStyle.first_item}>
             <input
               className={formStyle.input_big}
-              type="text"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="email"
+              type="password"
+              value={pass}
+              onChange={(e) => setPass(e.target.value)}
+              placeholder="Password"
             />
           </div>
           <button

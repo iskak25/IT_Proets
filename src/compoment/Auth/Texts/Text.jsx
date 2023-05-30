@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import textStyle from '../Text/Text.module.scss'
+import textStyle from './Text.module.scss'
 
 const Text = (props) => {
   return (

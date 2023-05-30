@@ -1,4 +1,4 @@
-import Form from 'compoment/Form/Form'
+import Form from 'compoment/Auth/Form/Form'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import React from 'react'
 import { useDispatch } from 'react-redux'

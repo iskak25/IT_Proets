@@ -1,10 +1,9 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
-import Form from 'compoment/Form/Form'
+import Form from 'compoment/Auth/Form/Form'
 import { setUser } from 'redux/slices/userSlice'
 import { useNavigate } from 'react-router-dom'
-import Text from 'compoment/Text/Text'
 
 const Register = () => {
   const dispatch = useDispatch()

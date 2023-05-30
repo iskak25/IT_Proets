@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import navStyle from './Navbar.module.scss'
-import user_icon from '../../assets/img/user_icon.svg'
 import { useAuth } from 'hooks/useAuth'
-import { useSelector } from 'react-redux'
+import { ADMIN } from 'helpers/consts'
 
 const Navbar = () => {
   const { isAuth, email } = useAuth()
@@ -12,42 +11,27 @@ const Navbar = () => {
     <>
       <div className={navStyle.container}>
         <div className={navStyle.content}>
-          <Link to="">
-            <a href="">
-              <h3 className={navStyle.h3}>КУРСЫ</h3>
-            </a>
-          </Link>
-          <Link to="">
-            <a href="">
-              <h3 className={navStyle.h3}>МЕТОДИТКА</h3>
-            </a>
-          </Link>
-          <Link to="">
-            <a href="">
-              <h3 className={navStyle.h3}>ЦЕНА</h3>
-            </a>
-          </Link>
-          <Link to="">
-            <a href="">
-              <h3 className={navStyle.h3}>ОТЗЫВЫ</h3>
-            </a>
+          <Link to="/">
+            <h3 className={navStyle.h3}>ГЛАВНАЯ</h3>
           </Link>
 
-          <Link to="">
-            <a href="">
-              <h2 className={navStyle.h3}>CREATE</h2>
-            </a>
+          <Link to="/сontacts">
+            <h3 className={navStyle.h3}>КОНТАКТЫ</h3>
           </Link>
-          <Link to="">
-            <a href="">
-              <h3 className={navStyle.h3}>КОНТАКТЫ</h3>
-            </a>
+          <Link to="/aboutUs">
+            <h3 className={navStyle.h3}>О НАС</h3>
           </Link>
-          <Link to="">
-            <a href="">
-              <h3 className={navStyle.h3}>О НАС</h3>
-            </a>
+          <Link to="/project">
+            <h3 className={navStyle.h3}>ПРОЕКТЫ</h3>
           </Link>
+
+          {email == ADMIN ? (
+            <Link to="/admin">
+              <h3 className={navStyle.h3}>ADMIN PANEL</h3>
+            </Link>
+          ) : (
+            ''
+          )}
 
           {isAuth ? (
             <Link to="/profil">

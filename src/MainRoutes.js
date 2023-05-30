@@ -1,7 +1,12 @@
 import HomePages from './pages/Home/HomePages/HomePages'
 import { Route, Routes } from 'react-router-dom'
 import Loginpages from 'pages/Login/LoginPages'
-import Register from 'compoment/Register/Register'
+import Register from 'compoment/Auth/Register/Register'
+import AboutUs from 'compoment/AboutUs/AboutUs'
+import Profile from 'compoment/Profile/Profile'
+import Project from 'compoment/Project/Project'
+import Admin from 'compoment/Admin/Admin'
+import Contacts from 'compoment/Contacts/Contacts'
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -20,6 +25,32 @@ const MainRoutes = () => {
       element: <Register />,
       id: 3,
     },
+    {
+      link: '/aboutUs',
+      element: <AboutUs />,
+      id: 4,
+    },
+    {
+      link: '/profil',
+      element: <Profile />,
+      id: 5,
+    },
+    {
+      link: '/project',
+      element: <Project />,
+      id: 6,
+    },
+    {
+      link: '/admin',
+      element: <Admin />,
+      id: 6,
+    },
+    {
+      link: '/сontacts',
+      element: <Contacts />,
+      id: 6,
+    },
+    Contacts,
   ]
   // console.log('asdfg')
   const PRIVATE_ROUTES = [

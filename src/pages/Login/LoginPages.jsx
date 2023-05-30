@@ -1,5 +1,5 @@
-import Login from 'compoment/Login/Login'
-import Register from 'compoment/Register/Register'
+import Login from 'compoment/Auth/Login/Login'
+import Register from 'compoment/Auth/Register/Register'
 import React from 'react'
 
 const Loginpages = () => {
